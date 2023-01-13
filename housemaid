@@ -5,5 +5,5 @@
 : "${files:=}"
 
 for file in $files; do
-	rm -rfv "$HOME"/"${file:?}"
+	rm -rfv "${HOME:?}"/"${file:?}"
 done

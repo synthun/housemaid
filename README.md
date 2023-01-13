@@ -4,6 +4,11 @@ extremely tiny shell script that cleans your home folder quickly for you
 
 this is mostly for personal use because i am lazy but feel free if you wanna use it too
 
+## installation
+
++ `sudo make install` - install it
++ `sudo make uninstall` - uninstall it
+
 ## configuration
 
 the configuration file is located in `~/.config/housemaid/env`, which is where you put the files. example:
