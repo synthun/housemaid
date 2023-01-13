@@ -1,0 +1,9 @@
+#!/bin/sh -ex
+
+# shellcheck source=/dev/null
+. "$HOME"/.config/housemaid/env
+: "${files:=}"
+
+for file in $files; do
+	rm -rfv "$HOME"/"${file:?}"
+done
