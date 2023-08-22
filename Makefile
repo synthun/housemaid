@@ -1,11 +1,17 @@
-.POSIX: 
+.POSIX:
 
-PREFIX = /usr/local
-BINDIR = $(PREFIX)/bin
+BINDIR = $(HOME)/.local/bin
+CONFDIR = $(HOME)/.config/housemaid
 
-install: housemaid
+install:
 	mkdir -p $(BINDIR)
-	cp -f housemaid $(BINDIR)/housemaid
+	mkdir -p $(CONFDIR)
+	cp -f housemaid.lua $(BINDIR)/housemaid
+	cp -f config.lua $(CONFDIR)/config.lua
+	chmod +x $(BINDIR)/housemaid
 
 uninstall:
-	rm -rf $(BINDIR)/housemaid
+	rm -f $(CONFDIR)/housemaid
+	rm -f $(BINDIR)/houesmaid
+
+.PHONY: install uninstall
