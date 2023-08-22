@@ -24,7 +24,7 @@ heres an example configuration:
 files = {
         "Downloads/*"
         ".pki"
-        ".viminfo'
+        ".viminfo"
 }
 
 return files
