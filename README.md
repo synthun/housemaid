@@ -12,11 +12,12 @@ $ cd housemaid
 ```
 
 run `make` to install
+
 run `make uninstall` to uninstall
 
 ## usage and configuration
 
-run `housemaid` and the files specified in the `files` table in `~/.config/housemaid/config.lua` will be deleted. by default, this table is empty.
+run `housemaid` and the files in `~` specified in the `files` table in `~/.config/housemaid/config.lua` will be deleted. by default, this table is empty.
 
 heres an example configuration:
 
