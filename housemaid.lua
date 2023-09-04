@@ -7,7 +7,7 @@ if home then
 	local files = require("config")
 
 	for _, file in pairs(files) do
-		os.execute("rm -rv " .. home .. "/" .. file .. " 1>/dev/null")
+		os.execute("rm -rv " .. home .. "/" .. file)
 	end
 end
 
