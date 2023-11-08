@@ -23,7 +23,7 @@ heres an example configuration:
 
 ```lua
 files = {
-        "Downloads/*"
+        "Downloads/*.png"
         ".pki"
         ".viminfo"
 }
@@ -33,6 +33,6 @@ return files
 
 with this configuration:
 
-+ all the files in `~/Downloads` will be deleted, but not the download folders itself as `/*` is placed at the end of the string
++ every file in `~/Downloads` ending in `.png` will be removed, due to the wildcard
 + the `~/.pki` directory
 + the `~/.viminfo` file
