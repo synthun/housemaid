@@ -19,12 +19,12 @@ run `make uninstall` to uninstall
 
 run `housemaid` and the files in `~` specified in the `files` table in `~/.config/housemaid/config.lua` will be deleted. by default, this table is empty.
 
-heres an example configuration:
+**make sure to seperate each file name with a comma**
 
 ```lua
 files = {
-        "Downloads/*.png"
-        ".pki"
+        "Downloads/*.png",
+        ".pki",
         ".viminfo"
 }
 
