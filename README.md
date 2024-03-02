@@ -11,9 +11,17 @@ $ git clone https://codeberg.org/synthun/housemaid
 $ cd housemaid
 ```
 
-run `make` to install
+run the setup script:
 
-run `make uninstall` to uninstall
+```
+./setup.sh
+```
+
+to uninstall:
+
+```
+rm ~/.local/bin/housemaid ~/.config/housemaid
+```
 
 ## usage and configuration
 
